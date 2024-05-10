@@ -28,7 +28,7 @@ if(Git_FOUND)
             OUTPUT_STRIP_TRAILING_WHITESPACE
         )
 
-        string(SUBSTRING ${GIT_COMMIT_HASH} 0 7 GIT_COMMIT_HASH)
+        string(SUBSTRING "${input_string}" start_index length output_variable)
         set(VERSION_HASH ${GIT_COMMIT_HASH} )
 
         execute_process(

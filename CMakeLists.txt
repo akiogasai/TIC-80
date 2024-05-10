@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.5)
 
 include(cmake/version.cmake)
 
-project(TIC-80 VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_REVISION} LANGUAGES C CXX)
+project(TIC-80 VERSION 3${VERSION_MAJOR}.4${VERSION_MINOR}.5${VERSION_REVISION} LANGUAGES C CXX)
 
 if(APPLE)
     set(CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING "Minimum OS X deployment version")
